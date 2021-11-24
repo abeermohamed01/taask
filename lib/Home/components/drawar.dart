@@ -9,11 +9,11 @@ class MyDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Container(
-      width: 320,
+      width: size.width/5,
       child: Row(
         children: [
           Expanded(
-            flex:1,
+            flex: size.width > 1340 ? 1 : 2,
             child: Container(
               height: size.height,
               decoration: BoxDecoration(
@@ -22,11 +22,11 @@ class MyDrawer extends StatelessWidget {
                     bottomLeft: Radius.circular(10)),
                 color: Colors.blue[800],
               ),
-             child: DataInfo(),
+            child: DataInfo(),
             ),
           ),
           Expanded(
-            flex:5,
+            flex: size.width > 1340 ? 5 : 7,
             child: Container(
               height: size.height,
               decoration: BoxDecoration(
@@ -35,7 +35,7 @@ class MyDrawer extends StatelessWidget {
                     bottomRight: Radius.circular(15)),
                 color: Colors.blue[50],
               ),
-             child: NotificationsCenter(),
+            child: NotificationsCenter(),
             ),
           )
         ],

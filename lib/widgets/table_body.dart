@@ -45,7 +45,7 @@ class TableBody extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 80),
+                    padding: const EdgeInsets.symmetric(horizontal: 75),
                     child: Text(
                       '22 June 2020',
                       style: TextStyle(
@@ -60,7 +60,7 @@ class TableBody extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 100),
+                    padding: const EdgeInsets.symmetric(horizontal: 120),
                     child: Text(
                       'Delivered',
                       style: TextStyle(

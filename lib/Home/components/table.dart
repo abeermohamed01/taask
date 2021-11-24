@@ -11,7 +11,6 @@ class MyTable extends StatefulWidget {
 }
 
 class _MyTableState extends State<MyTable> {
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -21,26 +20,28 @@ class _MyTableState extends State<MyTable> {
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 30),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  'Transactions',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
-                ),
-                SizedBox(
-                  width: 760,
-                ),
-                Container(
-                  width: 180,
-                  height: 35,
-                  child: defaultFormField(
-                    prefix: Icons.search,
-                    label: 'Search',
-                    color: Colors.grey,
+            child: Container(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    'Transactions',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
                   ),
-                )
-              ],
+                  SizedBox(
+                    width: 760,
+                  ),
+                  Container(
+                    width: 180,
+                    height: 35,
+                    child: defaultFormField(
+                      prefix: Icons.search,
+                      label: 'Search',
+                      color: Colors.grey,
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
           Container(
