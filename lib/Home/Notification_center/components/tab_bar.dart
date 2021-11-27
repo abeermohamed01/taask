@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:taask/providers/tab_provider.dart';
 
 class CustomTabBar extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -17,7 +18,7 @@ class CustomTabBar extends StatelessWidget {
                 title: 'Active\nSessions',
               ),
               SizedBox(
-                width: 30,
+                width: 60,
                 height: 5,
               ),
 

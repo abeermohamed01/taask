@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:taask/widgets/desktop_layout.dart';
-import 'package:taask/widgets/mobile.dart';
+import 'package:taask/Home/mobile/mobile.dart';
 import 'package:taask/widgets/responsive.dart';
-import 'package:taask/widgets/tablet_layout.dart';
+import 'package:taask/Home/tablet/tablet_layout.dart';
+import 'package:taask/Home/desktop/desktop.dart';
 
 class HomeView extends StatelessWidget {
 

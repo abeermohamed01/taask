@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'custom_check.dart';
 
-class TableBody extends StatelessWidget {
+class CustomRow extends StatelessWidget {
+ // int index;
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-        shrinkWrap: true,
-        scrollDirection: Axis.vertical,
-        itemBuilder: (BuildContext context, int index) => Padding(
+    return Padding(
           padding: const EdgeInsets.only(left: 10,right: 10),
           child: Row(
                 children: [
@@ -16,9 +14,7 @@ class TableBody extends StatelessWidget {
                     width: 100,
                     child: Row(
                       children: [
-                        CustomCheckBox(
-                          index: index,
-                        ),
+                        CustomCheckBox(),
                         SizedBox(width: 10,),
                         Text(
                           '003452',
@@ -77,8 +73,6 @@ class TableBody extends StatelessWidget {
                   ),
                 ],
               ),
-        ),
-        separatorBuilder: (BuildContext context, int index) => Divider(),
-        itemCount: 10);
+        );
   }
 }
